@@ -7,12 +7,16 @@ Cluster Roles:
 cluster-admin: Provides full access to perform any action within the cluster.
 cluster-reader: Grants read-only access to all resources within the cluster.
 Custom cluster roles: You can define custom cluster roles tailored to your specific requirements.
+
+
 Roles:
 
 admin: Grants full access to manage resources within a specific namespace.
 edit: Provides read/write access to most resources within a specific namespace, but doesn't allow modification of namespace-wide resources like quotas and limits.
 view: Grants read-only access to resources within a specific namespace.
 Custom roles: Similar to cluster roles, you can define custom roles specific to a namespace.
+
+
 Verbs:
 
 get: Allows retrieving information about a resource.
