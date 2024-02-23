@@ -1,0 +1,21 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: aws-auth-cluster-admin
+subjects:
+- kind: User
+  name: <IAM-User-ARN>
+  apiGroup: rbac.authorization.k8s.io
+- kind: User
+  name: <IAM-User2-ARN>
+  apiGroup: rbac.authorization.k8s.io
+- kind: Group
+  name: <IAM-Group-ARN>
+  apiGroup: rbac.authorization.k8s.io
+- kind: Group
+  name: <IAM-Group2-ARN>
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io
